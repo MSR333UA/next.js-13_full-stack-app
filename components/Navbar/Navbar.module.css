@@ -3,6 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 576px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .logo {
@@ -13,7 +18,16 @@
 .links {
   display: flex;
   gap: 20px;
-  /* align-items: center; */
+  align-items: center;
+
+  @media screen and (max-width: 576px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 10px;
+    font-size: 12px;
+  }
 }
 
 .logout {

@@ -2,6 +2,11 @@
   display: flex;
   align-items: center;
   gap: 100px;
+
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+    gap: 0px;
+  }
 }
 
 .item {
@@ -17,6 +22,10 @@
   /* linear-gradient for text */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media screen and (max-width: 768px) {
+    font-size: 50px;
+  }
 }
 
 .img {
@@ -37,4 +46,9 @@
 .desc {
   font-size: 24px;
   font-weight: 300;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    font-weight: 200;
+  }
 }

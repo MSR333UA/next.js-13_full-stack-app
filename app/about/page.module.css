@@ -19,11 +19,26 @@
   background-color: #53c28b;
   color: white;
   padding: 5px;
+
+  @media screen and (max-width: 576px) {
+    font-size: 8px;
+
+    bottom: 0px;
+    left: 0px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .textContainer {
   display: flex;
   gap: 100px;
+
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .item {
@@ -32,6 +47,10 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @media screen and (max-width: 576px) {
+    align-items: center;
+  }
 }
 .desc {
   font-size: 18px;
