@@ -4,7 +4,7 @@ import React from "react";
 import styles from "./page.module.css";
 
 const Category = ({ params }) => {
-  console.log(params);
+  // console.log(params);
   return (
     <div>
       <h1 className={styles.catTitle}>{params.category}</h1>

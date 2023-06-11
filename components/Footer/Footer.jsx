@@ -6,7 +6,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <div>© 2023 Lamamia. All rights reversed.</div>
+      <div>© 2023 MSR development. All rights reversed.</div>
       <div className={styles.social}>
         <Link href={"https://linkedin.com/in/matviivserhii"} target="_bland">
           <Image
