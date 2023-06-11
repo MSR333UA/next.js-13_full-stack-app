@@ -8,7 +8,7 @@
 
   @media screen and (max-width: 576px) {
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 }
 
@@ -18,15 +18,24 @@
   gap: 100px;
 
   @media screen and (max-width: 576px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: stretch;
+
     gap: 0px;
   }
 }
 
-.imgContainer {
+.imgWrap {
   flex: 1;
-  height: 500px;
   position: relative;
+}
+
+.imgContainer {
+  height: 500px;
+
+  @media screen and (max-width: 768px) {
+    height: 350px;
+  }
 }
 
 .form {
