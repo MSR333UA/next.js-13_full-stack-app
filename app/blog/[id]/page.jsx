@@ -1,13 +1,16 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./page.module.css";
+import { getDataId } from "@/utils/API/api";
 
-const BlogPost = () => {
+const BlogPost = async ({ params }) => {
+  const data = await getDataId(params.id);
+  console.log(params.id);
   return (
     <div className={styles.container}>
       <div className={styles.top}>
         <div className={styles.info}>
-          <h1 className={styles.title}>Lorem ipsum dolor sit amet.</h1>
+          <h1 className={styles.title}>{data.title}</h1>
           <p className={styles.desc}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
             cumque accusamus doloribus explicabo voluptate molestiae provident
