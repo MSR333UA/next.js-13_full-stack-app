@@ -17,7 +17,7 @@ const Blog = async () => {
         >
           <div className={styles.imageContainer}>
             <Image
-              src="https://images.pexels.com/photos/4407184/pexels-photo-4407184.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src={item.img}
               alt=""
               width={400}
               height={250}
@@ -26,11 +26,7 @@ const Blog = async () => {
           </div>
           <div className={styles.content}>
             <h2 className={styles.title}>{item.title}</h2>
-            <p className={styles.desc}>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
-              facilis cumque veritatis, magnam maxime quia quisquam expedita
-              voluptas est! Dicta.
-            </p>
+            <p className={styles.desc}>{item.desc}</p>
           </div>
         </Link>
       ))}
